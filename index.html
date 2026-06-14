@@ -1,0 +1,413 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FizzyAI | AI Automation For Businesses</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#080808;
+    color:white;
+    line-height:1.7;
+    overflow-x:hidden;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    width:700px;
+    height:700px;
+    background:#4f46e5;
+    filter:blur(220px);
+    opacity:.18;
+    top:-250px;
+    right:-250px;
+    z-index:-1;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:0 24px;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    max-width:750px;
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 16px;
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:999px;
+    color:#bdbdbd;
+    margin-bottom:24px;
+}
+
+.hero h1{
+    font-size:clamp(3rem,8vw,5.5rem);
+    line-height:1.05;
+    margin-bottom:24px;
+}
+
+.hero p{
+    font-size:1.25rem;
+    color:#b7b7b7;
+    max-width:650px;
+}
+
+.buttons{
+    margin-top:35px;
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    padding:14px 26px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:white;
+    color:black;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+.btn-secondary{
+    border:1px solid rgba(255,255,255,.15);
+    color:white;
+}
+
+.btn-secondary:hover{
+    background:#151515;
+}
+
+/* SECTIONS */
+
+section{
+    padding:100px 0;
+}
+
+.section-title{
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.section-subtitle{
+    color:#aaa;
+    margin-bottom:50px;
+}
+
+/* SERVICES */
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:24px;
+}
+
+.card{
+    background:#121212;
+    border:1px solid rgba(255,255,255,.05);
+    padding:30px;
+    border-radius:20px;
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#4f46e5;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+/* STATS */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.stat{
+    text-align:center;
+    background:#111;
+    padding:30px;
+    border-radius:18px;
+}
+
+.stat h3{
+    font-size:3rem;
+}
+
+/* PROCESS */
+
+.process{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+/* CTA */
+
+.cta{
+    text-align:center;
+    background:#101010;
+    border-radius:25px;
+    padding:70px 30px;
+}
+
+.cta h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.cta p{
+    color:#aaa;
+    max-width:650px;
+    margin:auto;
+    margin-bottom:30px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    color:#888;
+    padding:40px 0;
+}
+
+/* SCROLL ANIMATIONS */
+
+.fade{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all .8s ease;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="badge">
+AI Automation Agency
+</div>
+
+<h1>
+Automate Customer Conversations With AI
+</h1>
+
+<p>
+FizzyAI builds custom AI chatbots that qualify leads,
+answer customer questions, book appointments, and
+provide support 24/7.
+</p>
+
+<div class="buttons">
+<a href="mailto:musa@fizzyai.store" class="btn btn-primary">
+Book A Free Demo
+</a>
+
+<a href="#services" class="btn btn-secondary">
+View Services
+</a>
+</div>
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<h2 class="section-title">
+What We Do
+</h2>
+
+<p class="section-subtitle">
+We help businesses automate customer interactions,
+capture more leads, and reduce manual work using AI.
+</p>
+
+</section>
+
+<section id="services" class="fade">
+
+<h2 class="section-title">
+Services
+</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Website Chatbots</h3>
+<p>Instant responses to visitors and automated lead capture.</p>
+</div>
+
+<div class="card">
+<h3>WhatsApp Automation</h3>
+<p>Engage customers directly on WhatsApp using AI.</p>
+</div>
+
+<div class="card">
+<h3>Lead Qualification</h3>
+<p>Filter and qualify prospects automatically before sales calls.</p>
+</div>
+
+<div class="card">
+<h3>Customer Support AI</h3>
+<p>Handle common support requests around the clock.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<h2 class="section-title">
+How It Works
+</h2>
+
+<div class="process">
+
+<div class="card">
+<h3>1. Discovery</h3>
+<p>We learn about your business and customer journey.</p>
+</div>
+
+<div class="card">
+<h3>2. Build</h3>
+<p>We create and train your AI assistant.</p>
+</div>
+
+<div class="card">
+<h3>3. Deploy</h3>
+<p>Launch on your website, WhatsApp, or support channels.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<h2 class="section-title">
+Results
+</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h3>24/7</h3>
+<p>Availability</p>
+</div>
+
+<div class="stat">
+<h3>Instant</h3>
+<p>Lead Response</p>
+</div>
+
+<div class="stat">
+<h3>100%</h3>
+<p>Automated Follow-Ups</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<div class="cta">
+
+<h2>
+Ready To Automate?
+</h2>
+
+<p>
+Stop losing leads and wasting time on repetitive customer
+questions. Let AI handle the conversations while you focus
+on growing your business.
+</p>
+
+<a href="mailto:musa@fizzyai.store" class="btn btn-primary">
+Contact FizzyAI
+</a>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 FizzyAI. All rights reserved.
+</footer>
+
+</div>
+
+<script>
+
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+document.querySelectorAll(".fade").forEach((el)=>{
+    observer.observe(el);
+});
+
+</script>
+
+</body>
+</html>
+```
